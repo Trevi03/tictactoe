@@ -8,8 +8,6 @@ def returnBoolean(l):
     for i in l:
         blist += [i != " "]
     return blist
-        
-    
 
 def endGame():
     #1st horizontal
@@ -49,7 +47,6 @@ def getPos():
     return p
 
 
-
 print("The positions are as follows:\n1|2|3\n-----\n4|5|6\n-----\n7|8|9\n-------------------------------\n")
 currentPlayer = "O"
 Game = "running"
@@ -66,13 +63,8 @@ while Game == "running":
     n = getPos()
     m[int(n)-1] = currentPlayer
     board = str( m[0] + "|" + m[1] + "|" + m[2] + "\n" + "-----" + "\n" + m[3] + "|" + m[4] + "|" + m[5] + "\n" + "-----" + "\n" +  m[6] + "|" + m[7] + "|" + m[8])
-    
     print(board)
-
-    
     Game = endGame()
-
-
 
 if Game == "win":
     print("Player " + currentPlayer + " won!")
