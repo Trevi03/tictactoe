@@ -1,2 +1,2 @@
 # tictactoe
-project #1
+simple task to cover basic topics for new languages
